@@ -997,6 +997,11 @@ footer {
   }
 
   /*FOOTER*/
+  .footer{
+    margin-top: 2rem;
+  }
+
+
   .footer-description {
     font-size: 17px;
     font-family: dmsans;
