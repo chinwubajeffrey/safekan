@@ -35,12 +35,31 @@ document.querySelectorAll('.faq-container-div').forEach((item) => {
   });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const navIcon = document.getElementById('navicon');
-  const navList = document.getElementById('navList');
+// document.addEventListener('DOMContentLoaded', () => {
+//   const navIcon = document.getElementById('navicon');
+//   const navList = document.getElementById('navList');
 
-  navIcon.addEventListener('click', () => {
+//   navIcon.addEventListener('click', () => {
 
-    navList.classList.toggle('show'); // Toggle the show class
+//     navList.classList.toggle('show'); // Toggle the show class
+//   });
+// });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const dropdownButton = document.getElementById('dropdownButton');
+  const dropdownContent = document.getElementById('dropdownContent');
+
+  dropdownButton.addEventListener('click', function () {
+      dropdownContent.classList.toggle('show');
+  });
+
+  // Close the dropdown if clicked outside
+  window.addEventListener('click', function (event) {
+      if (!event.target.matches('.dropdown-icon')) {
+          if (dropdownContent.classList.contains('show')) {
+              dropdownContent.classList.remove('show');
+          }
+      }
   });
 });
