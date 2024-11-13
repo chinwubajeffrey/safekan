@@ -70,11 +70,14 @@ body {
 /* NAVBAR STYLING */
 nav {
   display: flex;
+  position: sticky;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  z-index: 100;
   align-items: center;
   justify-content: space-between;
   margin-top: 1.2rem;
   padding: 0.7rem 2rem;
-  background-color: var(--background-color);
 }
 
 .navItemContainer {
@@ -729,7 +732,6 @@ footer {
 
 
 
-
 @media (max-width: 400px) {
   * {
     padding: 0;
@@ -740,6 +742,10 @@ footer {
     height: 100vh;
     padding: 0;
     margin: 0;
+    background: rgba(231, 235, 255, 1);
+  }
+
+  nav{
     background: rgba(231, 235, 255, 1);
   }
 
@@ -1056,12 +1062,18 @@ footer {
     overflow: hidden;
     border-radius: 0px 0px 15px 15px;
     border-top: none;
-    background: rgba(55, 125, 255, 1);
+    background: #0031EE;
     width: 90%;
     color: white;
     max-height: 0;
     transition: max-height 0.2s ease-out, padding 0.2s ease-out;
     margin: auto;
+  }
+
+  img.icon{
+    display: block;
+    width: 10px;
+    height: 10px;
   }
 
 
@@ -1133,7 +1145,7 @@ footer {
   }
 
   .footer-description {
-    font-size: 17px;
+    font-size: 15px;
     font-family: monthinner;
   }
 
