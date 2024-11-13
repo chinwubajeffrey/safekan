@@ -35,17 +35,6 @@ document.querySelectorAll('.faq-container-div').forEach((item) => {
   });
 });
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   const navIcon = document.getElementById('navicon');
-//   const navList = document.getElementById('navList');
-
-//   navIcon.addEventListener('click', () => {
-
-//     navList.classList.toggle('show'); // Toggle the show class
-//   });
-// });
-
-
 document.addEventListener('DOMContentLoaded', function () {
   const dropdownButton = document.getElementById('dropdownButton');
   const dropdownContent = document.getElementById('dropdownContent');
